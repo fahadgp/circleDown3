@@ -1,0 +1,52 @@
+.clock{
+height:200px;
+width:200px;
+position:relative;
+overflow:hidden;
+float:left;
+}
+
+.clock .rotate,.clock .bg{
+	position:absolute;
+	width:200px;
+	height:200px;
+	top:0;
+}
+.clock .bg{ width:100px; }
+
+
+
+.clock .display,.clock .time{
+	/* Holds the number of seconds, minutes or hours respectfully */
+	position:absolute;
+	width:200px;
+	font-family: Segoe UI, Lucida Grande, Arial, sans-serif;
+    z-index:99999;
+	color:#FFF;
+	font-size:72px;
+	text-align:center;
+	top:50px;
+	left:0;
+	text-shadow:4px 4px 5px rgba(200,200,200,0.3);
+}
+.clock .time{
+
+	/* Holds the number of seconds, minutes or hours respectfully */
+	
+	font-size:12px;
+	
+	top:130px;
+
+	
+}
+.clock{ background:url(img/Circlebg.png) no-repeat; }
+
+.days .bg.left,.mins .bg.left,.hours .bg.left{ background:url(img/circle.png) no-repeat left top; }
+
+
+.clock .bg.right{ left:100px; }
+
+.days .bg.right,.hours .bg.right,.mins .bg.right{ background:url(img/circle.png) no-repeat right top; }
+
+#lbox{width:100px;overflow:hidden;height:200px;position:absolute;left:100px;}
+#rbox{width:100px;overflow:hidden;height:200px;position:absolute;}

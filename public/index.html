@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>circleDown</title>
+ <!-- CSS stylesheets -->
+<link rel="stylesheet" type="text/css" href="styles.css" />
+<link rel="stylesheet" type="text/css" href="plugin/circleDown.css" />
+
+</head>
+
+<body>
+ <!-- The Website is built within a Slider called OpenCanvas,check the documentaion for more details.-->
+<ul id="slider">
+
+	<li>  <!-- The list item contains the homepage. -->
+		<img class="aimg" src="img/4.jpg"></img> <!-- The background image. -->
+		<div id="home" class="object" fade-from="0.5" fade-to="1" duration="0.6"> <!-- Uses the openCanvas plugin to fade-in the div.-->
+			<div id="main">
+			<h1 class="logo">COMPANY NAME</h1>
+			<h4 class="header">WE ARE LAUNCHING IN</h4>
+			<div id="CircleDown"></div>  <!-- The CountDown plugin.-->
+			<h5 id="aboutUs">OUR GOAL IS TO MAKE THE INTERNET A BETTER PLACE</h5>
+			
+			</div>
+		</div>
+	
+		<div id="footer" class="object"   fade-from="0" fade-to="1" duration="1.6">
+			<h4 class="header" style="font-size:16px;">GET NOTIFIED WHEN WE LAUNCH</h4>
+			<!-- Subscrition form-->
+			<form method="post" action="includes/suscribe.php" id="suscribe">
+				<input type="text" id="email" name="SuscribeEmail" value="example@example.com" onfocus="this.value=''" />
+				<input type="submit" value="Submit" id="submitButton" onClick="this.value='Suscribed!'"/>
+			</form>
+			<!-- Social networks-->
+			<a href="http://www.facebook.com"><img class="social" src="plugin/img/facebook-icon.png"></img></a>
+			<a href="http://www.twitter.com"><img class="social" src="plugin/img/twitter-icon.png"></img></a>
+		</div>  
+		</li>
+
+
+
+	<li>  <!-- The list item contains the info page. -->
+		<img class="aimg" src="img/5.jpg"></img>
+		<div class="object" fade-from="0.5" fade-to="1" duration="0.6">
+			<h1 class="logo" style="color:#4e4e4e;" >COMPANY NAME</h1>
+			<h1 style="color:#fff;text-align:center;background-color:#4e4e4e;">ABOUT US</h1>
+			<div class="centeredBox">
+				<p style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p style="color:#fff;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</li>
+
+
+
+	<li> <!-- The list item contains the contact page. -->
+		<img class="aimg" src="img/6.jpg"></img>
+		<div class="object" fade-from="0.5" fade-to="1" duration="0.6">
+			<h1 class="logo" style="color:#4e4e4e;" >COMPANY NAME</h1>
+			<h1 style="color:#fff;text-align:center;background-color:#4e4e4e;">CONTACT US</h1>
+			<form method="post" action="includes/contact.php"  class="centeredBox">
+				<input type="text" id="Name" name="Name"  value="Name" style="margin-right:5px;" onfocus="this.value=''" onblur="if(this.value=='')this.value='Name';"/>
+				<input type="text" id="Email" name="Email" value="Email" onfocus="this.value=''" onblur="if(this.value=='')this.value='Email';"/> 
+				</br>
+				<textarea name="Message" id="Message" rows="15" cols="72" style="margin-top:5px;"></textarea>
+				</br>
+				<input type="submit" value="Send" id="submit-Button" onClick="this.value='Your message has been sent!'"/>
+			</form>
+		</div>
+	</li>
+	
+</ul>  
+<p id="copyright">©2012 FahadGP</p>
+ <!-- Scripts -->
+<script type="text/javascript" src="plugin/jquery.js"></script>
+<script type="text/javascript" src="plugin/circleDown.js"></script>
+<script type="text/javascript" src="plugin/openCanvas-packed.js"></script>
+<script type="text/javascript" src="controls.js"></script>
+
+</body>
+</html>
